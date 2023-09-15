@@ -1,0 +1,39 @@
+{
+    "name": "overtrue/laravel-shopping-cart",
+    "description": "Shopping cart for Laravel Application.",
+    "keywords": [
+        "shopping cart",
+        "shopping",
+        "laravel"
+    ],
+    "authors": [
+        {
+            "name": "overtrue",
+            "email": "anzhengchao@gmail.com"
+        }
+    ],
+    "require": {
+        "php":">=5.5"
+    },
+    "require-dev": {
+        "mockery/mockery": "~1.2",
+        "phpunit/phpunit": "~7.5",
+        "illuminate/session": "5.8.* || ~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Overtrue\\LaravelShoppingCart\\": "src/LaravelShoppingCart/"
+        }
+    },
+    "license": "MIT",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Overtrue\\LaravelShoppingCart\\ServiceProvider"
+            ],
+            "aliases": {
+                "ShoppingCart": "Overtrue\\LaravelShoppingCart\\Facade"
+            }
+        }
+    }
+}
